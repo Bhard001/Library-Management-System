@@ -1,0 +1,16 @@
+{
+  "name": "lms",
+  "version": "1.0.0",
+  "description": "Library Management System",
+  "main": "backend/src/server.ts",
+  "scripts": {
+    "backend:dev": "cd backend && npm run dev",
+    "backend:build": "cd backend && npm run build",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}

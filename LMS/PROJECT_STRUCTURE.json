@@ -1,0 +1,83 @@
+{
+  "root": "LMS",
+  "folders": {
+    "backend": {
+      "src": {
+        "database.ts": "SQLite database initialization and connection",
+        "server.ts": "Express server entry point",
+        "seed.ts": "Database seeding script with sample data",
+        "middleware": {
+          "auth.ts": "JWT authentication middleware"
+        },
+        "routes": {
+          "auth.ts": "Login and registration endpoints",
+          "books.ts": "Book CRUD operations",
+          "membership.ts": "Membership management endpoints",
+          "issue.ts": "Book issue/return endpoints",
+          "user.ts": "User management endpoints",
+          "reports.ts": "Report generation endpoints"
+        }
+      },
+      "data": "SQLite database file location (created during setup)",
+      "package.json": "Backend dependencies and scripts",
+      "tsconfig.json": "TypeScript configuration",
+      ".env": "Backend environment variables"
+    },
+    "frontend": {
+      "src": {
+        "app": {
+          "page.tsx": "Home redirect page",
+          "layout.tsx": "Root layout with auth provider",
+          "globals.css": "Global styles",
+          "login": {
+            "page.tsx": "Login page"
+          },
+          "dashboard": {
+            "page.tsx": "Main dashboard page"
+          },
+          "admin": {
+            "maintenance": {
+              "page.tsx": "Maintenance module home",
+              "books": {
+                "add": "Add new book page",
+                "update": "Update book page"
+              },
+              "membership": {
+                "add": "Add membership page",
+                "update": "Update membership page"
+              },
+              "users": "User management page",
+              "pending-issues": "Pending issues page"
+            }
+          },
+          "transactions": {
+            "page.tsx": "Transactions home",
+            "issue": "Book issue page",
+            "return": "Book return page",
+            "my-books": "View issued books page"
+          },
+          "reports": {
+            "page.tsx": "Reports page"
+          }
+        },
+        "context": {
+          "AuthContext.tsx": "Auth state management"
+        },
+        "lib": {
+          "api.ts": "Axios API client with interceptors"
+        }
+      },
+      "package.json": "Frontend dependencies and scripts",
+      "tsconfig.json": "TypeScript configuration",
+      "next.config.js": "Next.js configuration",
+      ".env.local": "Frontend environment variables"
+    }
+  },
+  "files": {
+    "README.md": "Main project documentation",
+    "SETUP_GUIDE.md": "Detailed setup and usage guide",
+    "PROJECT_STRUCTURE.json": "This file - project structure overview",
+    "package.json": "Workspace configuration",
+    ".gitignore": "Git ignore rules"
+  }
+}
